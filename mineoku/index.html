@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mineoku</title>
+<meta name="description" content="A naval minefield logic puzzle: place one mine in every row, column and region, with no two mines touching.">
+<link rel="icon" href="images/app_icon.png">
+<link rel="stylesheet" href="../style.css">
+<style>
+  /* Mineoku's own palette: the game's dark sonar console. */
+  :root {
+    --bg: #0b131f;
+    --text: #e3ecf5;
+    --muted: #8aa0b8;
+    --accent: #5fd8d2;
+  }
+  .rules {
+    border: 1px solid #1e3a5f;
+    background: #121d2b;
+    border-radius: 12px;
+    padding: 4px 20px;
+  }
+  table { border-collapse: collapse; width: 100%; }
+  th, td { text-align: left; padding: 6px 12px 6px 0; border-bottom: 1px solid #1e3a5f; }
+  th { color: var(--muted); font-weight: 600; }
+</style>
+</head>
+<body>
+<main>
+<p class="crumb"><a href="../">baylandblue</a></p>
+
+<div class="hero">
+  <img src="images/app_icon.png" alt="Mineoku app icon" width="112" height="112">
+  <div>
+    <h1>Mineoku</h1>
+    <p class="meta">A naval minefield logic puzzle for Android. Coming soon to Google Play.</p>
+  </div>
+</div>
+
+<p>Chart the minefield by pure logic. Every board has exactly one solution, and you never
+have to guess: each mine can be found by careful deduction.</p>
+
+<div class="shots">
+  <img src="images/screenshot_1.png" alt="An 8×8 board in play, with mines placed and cells ruled out" width="540" height="1200" loading="lazy">
+  <img src="images/screenshot_2.png" alt="The Survey drone crossing the board to find the next step" width="540" height="1200" loading="lazy">
+  <img src="images/screenshot_3.png" alt="The campaign level map with stars earned" width="540" height="1200" loading="lazy">
+  <img src="images/screenshot_4.png" alt="The main menu" width="540" height="1200" loading="lazy">
+</div>
+
+<h2>How it works</h2>
+<div class="rules">
+  <p>The board is split into colored regions. Place mines so that:</p>
+  <ul>
+    <li>every <strong>row</strong> has exactly one mine,</li>
+    <li>every <strong>column</strong> has exactly one mine,</li>
+    <li>every <strong>region</strong> has exactly one mine, and</li>
+    <li>no two mines <strong>touch</strong>, not even diagonally.</li>
+  </ul>
+  <p>Mark the cells you've ruled out with an X. But careful: put an X on a real mine and it
+  goes off. You have three lives per board.</p>
+</div>
+
+<h2>400 levels in five sectors</h2>
+<p>Each level is graded by the deductions it needs, so the challenge climbs steadily from
+the shallows to the deep.</p>
+<table>
+  <tr><th>Sector</th><th>Levels</th><th>Board</th></tr>
+  <tr><td>Shallow Waters</td><td>1–25</td><td>6×6</td></tr>
+  <tr><td>Coastal Patrol</td><td>26–100</td><td>7×7</td></tr>
+  <tr><td>Open Sea</td><td>101–225</td><td>8×8</td></tr>
+  <tr><td>Deep Trench</td><td>226–325</td><td>9×9</td></tr>
+  <tr><td>Abyssal Plain</td><td>326–400</td><td>10×10</td></tr>
+</table>
+
+<h2>Daily Sonar Op and Free Play</h2>
+<p>A new board every day, the same for every player, growing from 7×7 early in the week to
+10×10 on Sunday, so keep your streak going. Or pick any size from 6×6 to 10×10 in Free Play
+for a fresh board whenever you like.</p>
+
+<h2>Learn as you go</h2>
+<ul>
+  <li>Boot Camp: five short coached drills teach the rules and the key deductions</li>
+  <li>Earn up to three stars per level by beating par</li>
+  <li>Undo and redo, plus optional automatic X marks for the cells a new mine rules out</li>
+</ul>
+
+<h2>Help when you're stuck</h2>
+<p>Send a minesweeper to <strong>Sweep</strong> a mine into view, launch a <strong>Survey</strong>
+drone that shows and explains the next logical step, or <strong>Ping</strong> the board to
+clear a few safe cells. Helps never cost stars. Charges refill over time, and you can watch an
+optional ad to get one back sooner.</p>
+
+<h2>A living sonar console</h2>
+<ul>
+  <li>Swaying moored mines with blinking lights and sonar pings</li>
+  <li>A convoy sails across every cleared board</li>
+  <li>An underwater ambient soundtrack</li>
+</ul>
+
+<h2>Ads</h2>
+<p>The game is free to play, with a banner ad below the board. Ads that restore a help charge
+only play when you choose to watch one. There are no in-app purchases.</p>
+
+<h2>Support</h2>
+<p>Questions, feedback or bug reports:
+<a href="mailto:baylandblue@gmail.com?subject=Mineoku">baylandblue@gmail.com</a></p>
+<p><a href="privacy.html">Privacy policy</a></p>
+</main>
+</body>
+</html>
