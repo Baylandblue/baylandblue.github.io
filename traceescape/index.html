@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trace Escape</title>
+<meta name="description" content="A circuit board puzzle: tap copper traces to slide them off the board, around ICs, diodes and gate-locked power rails.">
+<link rel="icon" href="images/app_icon.png">
+<link rel="stylesheet" href="../style.css">
+<style>
+  /* Trace Escape's own palette: dark soldermask, copper and scope green. */
+  :root {
+    --bg: #08100c;
+    --text: #cfe8d6;
+    --muted: #6f8f7c;
+    --accent: #5dff9b;
+  }
+  .rules {
+    border: 1px solid #13703f;
+    background: #0a4126;
+    border-radius: 12px;
+    padding: 4px 20px;
+  }
+  table { border-collapse: collapse; width: 100%; }
+  th, td { text-align: left; padding: 6px 12px 6px 0; border-bottom: 1px solid #13703f; }
+  th { color: var(--muted); font-weight: 600; }
+</style>
+</head>
+<body>
+<main>
+<p class="crumb"><a href="../">baylandblue</a></p>
+
+<div class="hero">
+  <img src="images/app_icon.png" alt="Trace Escape app icon" width="112" height="112">
+  <div>
+    <h1>Trace Escape</h1>
+    <p class="meta">A circuit board puzzle for Android. Coming soon to Google Play.</p>
+  </div>
+</div>
+
+<img class="banner" src="images/feature_graphic.png" alt="Trace Escape: a circuit board puzzle, with a board of copper traces" width="1024" height="500">
+
+<p>Every board is a circuit, and every copper trace has an arrow. Tap a trace and it slides off
+the board along its arrow, but only if nothing is in the way. Work out the right order and clear
+the whole board to pass QC.</p>
+
+<div class="shots">
+  <img src="images/screenshot_1.png" alt="Slide every trace off: a Logic Board board mid-solve, a trace escaping along its arrow" width="1080" height="1920" loading="lazy">
+  <img src="images/screenshot_2.png" alt="Mind the shorts: a blocked trace shorts and blows a fuse" width="1080" height="1920" loading="lazy">
+  <img src="images/screenshot_3.png" alt="Unlock the power rails: a locked rail's gate pins ripple to show what's still needed" width="1080" height="1920" loading="lazy">
+  <img src="images/screenshot_4.png" alt="Tools for tight spots: the Inspect magnifier finds a trace that can leave" width="1080" height="1920" loading="lazy">
+  <img src="images/screenshot_5.png" alt="600 boards in 9 packs: the Board Pack Unlocked splash" width="1080" height="1920" loading="lazy">
+  <img src="images/screenshot_6.png" alt="A new build every day: the main menu" width="1080" height="1920" loading="lazy">
+</div>
+
+<h2>How it works</h2>
+<div class="rules">
+  <ul>
+    <li>Tap a trace to send it sliding off the board in the direction of its <strong>arrow</strong>.</li>
+    <li>If anything is in its path, it <strong>shorts</strong> and you blow a fuse. You have three fuses per board.</li>
+    <li>Plan ahead: clearing one trace opens the way for the next.</li>
+  </ul>
+  <p>New components arrive as you go. <strong>ICs</strong> never move and block everything.
+  <strong>Logic gates</strong> lock silver power rails until their pin LEDs light up.
+  <strong>Capacitors</strong> charge as traces leave the board. <strong>Diodes</strong> only conduct
+  one way, until a trace overloads them.</p>
+</div>
+
+<h2>600 boards in nine packs</h2>
+<p>From a tiny breadboard to giant fab-test boards you pinch to zoom. Finish a pack to unlock
+the next, with a fanfare and bonus boosters.</p>
+<table>
+  <tr><th>Pack</th><th>Boards</th><th>New component</th></tr>
+  <tr><td>Breadboard</td><td>1–40</td><td>Copper traces</td></tr>
+  <tr><td>Perfboard</td><td>41–100</td><td>Longer, twistier traces</td></tr>
+  <tr><td>Through-Hole</td><td>101–170</td><td>ICs</td></tr>
+  <tr><td>Logic Board</td><td>171–240</td><td>OR gates</td></tr>
+  <tr><td>Interlock</td><td>241–310</td><td>AND gates</td></tr>
+  <tr><td>Power Supply</td><td>311–380</td><td>Capacitors</td></tr>
+  <tr><td>Rectifier</td><td>381–450</td><td>Diodes</td></tr>
+  <tr><td>Mainboard</td><td>451–530</td><td>Majority (k-of-n) gates</td></tr>
+  <tr><td>Fab Test</td><td>531–600</td><td>Everything, up to 20×32</td></tr>
+</table>
+
+<h2>Daily Build and Free Play</h2>
+<p>A new board every day, the same for every player, harder as the week goes on, so keep your
+streak going. Or jump into Free Play for endless fresh boards at Easy, Medium, Hard or Expert.</p>
+
+<h2>Boosters for tight spots</h2>
+<p><strong>Desolder</strong> lifts any trace straight off the board, <strong>Inspect</strong> finds a
+trace that can safely leave right now, and a <strong>Spare Fuse</strong> replaces a blown fuse or
+revives a fried board. Boosters recharge over time, and you can watch an optional ad to get one
+back sooner.</p>
+
+<h2>A living circuit board</h2>
+<ul>
+  <li>Current pulses along the traces, and status LEDs blink and breathe</li>
+  <li>Solder smokes, fuses blow and diodes pop</li>
+  <li>Relaxed background music while you think</li>
+</ul>
+
+<h2>Ads</h2>
+<p>The game is free to play, with a banner ad and an occasional ad between boards. A one-time
+Remove Ads purchase in Config removes them for good and makes boosters recharge faster. Ads that
+give a booster back only play when you choose to watch one.</p>
+
+<h2>Support</h2>
+<p>Questions, feedback or bug reports:
+<a href="mailto:baylandblue@gmail.com?subject=Trace%20Escape">baylandblue@gmail.com</a></p>
+<p><a href="privacy.html">Privacy policy</a></p>
+</main>
+</body>
+</html>
