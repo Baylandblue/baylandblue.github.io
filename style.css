@@ -1,15 +1,16 @@
 :root {
+  /* Bayland Blue's colors, from the logo: navy, sea blue, and the cream of its sky. */
   --bg: #faf7f2;
-  --text: #2b2118;
-  --muted: #6b5d50;
-  --accent: #8a4a20;
+  --text: #1f2a3b;
+  --muted: #5d6b7c;
+  --accent: #2b3d5c;
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #1d1a17;
-    --text: #f1ebe2;
-    --muted: #b8ab9c;
-    --accent: #e0a86a;
+    --bg: #141b26;
+    --text: #ecf0f5;
+    --muted: #a3b0c0;
+    --accent: #9fb8d8;
   }
 }
 body {
@@ -30,6 +31,16 @@ a { color: var(--accent); }
 li { margin: 0.3em 0; }
 img { max-width: 100%; height: auto; }
 .crumb { margin: 0 0 1em; font-size: 0.95em; }
+.crumb a { display: inline-flex; align-items: center; gap: 8px; }
+.crumb img { width: 24px; height: 24px; }
+
+/* Home page logo. Its lettering is navy, so on a dark page it sits on a cream disc. */
+.brand { text-align: center; margin-bottom: 8px; }
+.brand h1 { margin: 0 auto 0.4em; width: min(280px, 70vw); }
+.brand img { display: block; width: 100%; }
+@media (prefers-color-scheme: dark) {
+  .brand h1 { padding: 22px; border-radius: 50%; background: #faf7f2; }
+}
 
 /* Home page game list */
 .game {

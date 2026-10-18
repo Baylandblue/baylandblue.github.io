@@ -7,10 +7,27 @@
 <meta name="description" content="A train-yard sorting puzzle: tap sidings to send cars around the loop and sort them into tidy trains.">
 <link rel="icon" href="images/app_icon.png">
 <link rel="stylesheet" href="../style.css">
+<style>
+  /* Yardmaster's own palette: rust and cream. */
+  :root {
+    --bg: #faf7f2;
+    --text: #2b2118;
+    --muted: #6b5d50;
+    --accent: #8a4a20;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1d1a17;
+      --text: #f1ebe2;
+      --muted: #b8ab9c;
+      --accent: #e0a86a;
+    }
+  }
+</style>
 </head>
 <body>
 <main>
-<p class="crumb"><a href="../">Bayland Blue</a></p>
+<p class="crumb"><a href="../"><img src="../images/bayland_blue_icon_48.png" alt="" width="24" height="24">Bayland Blue</a></p>
 
 <div class="hero">
   <img src="images/app_icon.png" alt="Yardmaster app icon" width="112" height="112">
