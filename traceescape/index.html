@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Trace Escape</title>
-<meta name="description" content="A circuit board puzzle: tap copper traces to slide them off the board, around ICs, diodes and gate-locked power rails.">
+<meta name="description" content="A circuit board puzzle: tap copper traces to slide them off the board, through IC pin pairs, past diodes and gate-locked power rails.">
 <link rel="icon" href="images/app_icon.png">
 <link rel="stylesheet" href="../style.css">
 <style>
@@ -62,7 +62,7 @@ the whole board to pass QC.</p>
     <li>If anything is in its path, it <strong>shorts</strong> and you blow a fuse. You have three fuses per board.</li>
     <li>Plan ahead: clearing one trace opens the way for the next.</li>
   </ul>
-  <p>New components arrive as you go. <strong>ICs</strong> never move and block everything.
+  <p>New components arrive as you go. <strong>ICs</strong> block traces, except at their colored pins: slide into one pin and the trace comes out of its partner.
   <strong>Logic gates</strong> lock silver power rails until their pin LEDs light up.
   <strong>Capacitors</strong> charge as traces leave the board. <strong>Diodes</strong> only conduct
   one way, until a trace overloads them.</p>
