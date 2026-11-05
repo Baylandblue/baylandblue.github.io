@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ReDue</title>
+<meta name="description" content="ReDue: a task app for things that come around again. The next due date counts from when you actually finished. Coming soon to Android.">
+<link rel="icon" href="images/app_icon.png">
+<link rel="stylesheet" href="../style.css">
+<style>
+  /* ReDue's own palette: the icon's navy, blue and gold. */
+  :root {
+    --bg: #f6f8fc;
+    --text: #1f2a3b;
+    --muted: #5d6b7c;
+    --accent: #2b3d5c;
+    --gold: #b8862b;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #141b26;
+      --text: #ecf0f5;
+      --muted: #a3b0c0;
+      --accent: #9fb8d8;
+      --gold: #e3b45a;
+    }
+  }
+  .hero img { border-radius: 50%; }
+  .soon {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 999px;
+    background: color-mix(in srgb, var(--gold) 18%, transparent);
+    color: var(--gold);
+    font-weight: 700;
+    font-size: 0.9em;
+  }
+  .example {
+    border-left: 4px solid var(--gold);
+    padding: 4px 16px;
+    margin: 16px 0;
+    background: color-mix(in srgb, var(--muted) 8%, transparent);
+    border-radius: 0 10px 10px 0;
+  }
+</style>
+</head>
+<body>
+<main>
+<p class="crumb"><a href="../"><img src="../images/bayland_blue_icon_48.png" alt="" width="24" height="24">Bayland Blue LLC</a></p>
+
+<div class="hero">
+  <img src="images/app_icon.png" alt="ReDue app icon" width="112" height="112">
+  <div>
+    <h1>ReDue</h1>
+    <p class="meta">Done it? It'll be due again.</p>
+    <p><span class="soon">Coming soon to Android</span></p>
+  </div>
+</div>
+
+<p>ReDue is a task app for the things that come around again: changing a filter, watering the
+plants, an oil change, the flea treatment. It counts the next due date from when you
+<em>actually</em> did it, not from a fixed calendar.</p>
+
+<div class="example">
+  <p>Change the furnace filter every 3 months. You get to it two weeks late? The next one is
+  due 3 months from the day you really changed it, so you never have to remember when the
+  last time was.</p>
+</div>
+
+<h2>What it does</h2>
+<ul>
+  <li><strong>Repeat after you finish</strong>, every so many hours, days, weeks or months, or
+      a flexible range like "every 1–2 weeks"</li>
+  <li><strong>Calendar repeats</strong> too (every Tuesday, the 1st of the month, every
+      year), plus one-off tasks and simple lists without dates</li>
+  <li>A freshness bar on each repeating task, green to red, so you can see at a glance what's
+      slipping</li>
+  <li>Reminders and an optional morning summary, with Done, Later and Tomorrow right on the
+      notification</li>
+  <li>Streaks and badges for keeping up, with freezes that save a streak when life gets busy,
+      and a vacation mode</li>
+  <li>Starter packs for home, car, health, plants, pets and self-care, so you're set up in
+      under a minute</li>
+  <li>Notes, a number or a cost, and a photo on each completion, so a task's history tells
+      its story (mileage at each oil change, what the vet said)</li>
+  <li>Smart suggestions when the way you really do a task doesn't match its interval</li>
+  <li>Back up everything to a file, and export your history to a spreadsheet</li>
+  <li>In 11 languages: English, Spanish, Portuguese, French, German, Italian, Russian,
+      Japanese, Korean, Chinese and Turkish</li>
+</ul>
+
+<h2>Free, no ads</h2>
+<p>ReDue is free with no ads and no limit on tasks. An optional one-time <strong>ReDue
+Pro</strong> purchase adds a home-screen widget, stats and charts, and more color themes,
+with sync across devices and shared household tasks planned for later. No subscription.</p>
+
+<h2>Your data stays on your phone</h2>
+<p>There's no account to make. Your tasks live on your device; see the
+<a href="privacy.html">privacy policy</a>.</p>
+
+<h2>Support</h2>
+<p>Questions, feedback or bug reports:
+<a href="mailto:baylandblue@gmail.com?subject=ReDue">baylandblue@gmail.com</a></p>
+<p><a href="privacy.html">Privacy policy</a></p>
+</main>
+</body>
+</html>

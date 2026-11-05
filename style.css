@@ -105,3 +105,16 @@ a.game:hover { border-color: var(--accent); }
   box-shadow: inset 0 0 0 2px var(--accent);
 }
 .actions { display: flex; flex-wrap: wrap; gap: 8px; }
+
+/* "Coming soon" and similar labels next to a name */
+.tag {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 1px 9px;
+  border-radius: 999px;
+  vertical-align: 2px;
+  font-size: 0.7em;
+  font-weight: 700;
+  color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 14%, transparent);
+}
