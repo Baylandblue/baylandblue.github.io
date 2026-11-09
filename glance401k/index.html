@@ -25,6 +25,8 @@
       --green: #5fd08f;
     }
   }
+  /* The screenshots are nearly the page's color, so they need an edge. */
+  .shots img { box-sizing: border-box; border: 1px solid color-mix(in srgb, var(--muted) 35%, transparent); }
   .soon {
     display: inline-block;
     padding: 4px 12px;
@@ -49,9 +51,19 @@
   </div>
 </div>
 
+<img class="banner" src="images/feature_graphic.png" alt="401k Glance: your 401k balance on your home screen. A phone shows a balance of $277,000 and the day's chart." width="1024" height="500">
+
 <p>Enter what you hold once, and 401k Glance shows what it's worth: the official close, or an
 estimate while the market is open. No logging in to your plan's website, and no sharing your
 plan's password with anyone. The app never connects to your account.</p>
+
+<div class="shots">
+  <img src="images/screenshot_1.png" alt="The Balance screen: the balance, the day's change, the day's chart and when it was last reconciled" width="1080" height="1920" loading="lazy">
+  <img src="images/screenshot_2.png" alt="The History screen: charts for the day, the month and the year" width="1080" height="1920" loading="lazy">
+  <img src="images/screenshot_3.png" alt="The Projection screen: the projected balance at a future date, with contributions and growth" width="1080" height="1920" loading="lazy">
+  <img src="images/screenshot_4.png" alt="The Combined page: the total balance of two accounts and the day's chart" width="1080" height="1920" loading="lazy">
+  <img src="images/screenshot_5.png" alt="The Holdings screen: enter the shares you hold in each fund, or just a dollar balance" width="1080" height="1920" loading="lazy">
+</div>
 
 <h2>What it does</h2>
 <ul>
