@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>ReDue</title>
-<meta name="description" content="ReDue: a task app for things that come around again. The next due date counts from when you actually finished. Coming soon to Android.">
+<meta name="description" content="ReDue: a task app for things that come around again. The next due date counts from when you actually finished. Free on Google Play for Android.">
 <link rel="icon" href="images/app_icon.png">
 <link rel="stylesheet" href="../style.css">
 <style>
@@ -26,15 +26,8 @@
     }
   }
   .hero img { border-radius: 50%; }
-  .soon {
-    display: inline-block;
-    padding: 4px 12px;
-    border-radius: 999px;
-    background: color-mix(in srgb, var(--gold) 18%, transparent);
-    color: var(--gold);
-    font-weight: 700;
-    font-size: 0.9em;
-  }
+  /* The screenshots are nearly the page's color, so they need an edge. */
+  .shots img { box-sizing: border-box; border: 1px solid color-mix(in srgb, var(--muted) 35%, transparent); }
   .example {
     border-left: 4px solid var(--gold);
     padding: 4px 16px;
@@ -52,10 +45,12 @@
   <img src="images/app_icon.png" alt="ReDue app icon" width="112" height="112">
   <div>
     <h1>ReDue</h1>
-    <p class="meta">Done it? It'll be due again.</p>
-    <p><span class="soon">Coming soon to Android</span></p>
+    <p class="meta">Done it? It'll be due again. For Android, free on Google Play.</p>
+    <p class="actions"><a class="button" href="https://play.google.com/store/apps/details?id=com.baylandblue.redue">Get it on Google Play</a></p>
   </div>
 </div>
+
+<img class="banner" src="images/feature_graphic.png" alt="ReDue: Done it? It'll be due again. Tasks that come back when you finish them. A phone shows the Repeating screen." width="1024" height="500">
 
 <p>ReDue is a task app for the things that come around again: changing a filter, watering the
 plants, an oil change, the flea treatment. It counts the next due date from when you
@@ -65,6 +60,16 @@ plants, an oil change, the flea treatment. It counts the next due date from when
   <p>Change the furnace filter every 3 months. You get to it two weeks late? The next one is
   due 3 months from the day you really changed it, so you never have to remember when the
   last time was.</p>
+</div>
+
+<div class="shots">
+  <img src="images/screenshot_1.png" alt="The Today screen: overdue, due today and coming up, each task with a streak and a freshness bar" width="1080" height="1920" loading="lazy">
+  <img src="images/screenshot_2.png" alt="The Repeating screen: every repeating task with its interval, like every 5–7 days or every 3 months" width="1080" height="1920" loading="lazy">
+  <img src="images/screenshot_3.png" alt="A task's history: an oil change with a chart of the mileage recorded at each one" width="1080" height="1920" loading="lazy">
+  <img src="images/screenshot_4.png" alt="The Calendar screen: a month with dots on the days tasks are due" width="1080" height="1920" loading="lazy">
+  <img src="images/screenshot_5.png" alt="The Stats screen: tasks done, on-time rate and a chart of each week" width="1080" height="1920" loading="lazy">
+  <img src="images/screenshot_6.png" alt="The Badges screen: badges earned, tasks kept up and streak freezes" width="1080" height="1920" loading="lazy">
+  <img src="images/screenshot_7.png" alt="Starter packs: pick tasks you already do, like changing the HVAC filter or testing smoke alarms" width="1080" height="1920" loading="lazy">
 </div>
 
 <h2>What it does</h2>
@@ -86,6 +91,8 @@ plants, an oil change, the flea treatment. It counts the next due date from when
   <li>Notes, a number or a cost, and a photo on each completion, so a task's history tells
       its story (mileage at each oil change, what the vet said)</li>
   <li>Smart suggestions when the way you really do a task doesn't match its interval</li>
+  <li>Keep your tasks, history and photos the same on all your devices with optional sync
+      (ReDue Pro)</li>
   <li>Back up everything to a file, and export your history to a spreadsheet</li>
   <li>In 11 languages: English, Spanish, Portuguese, French, German, Italian, Russian,
       Japanese, Korean, Chinese and Turkish</li>
@@ -93,11 +100,13 @@ plants, an oil change, the flea treatment. It counts the next due date from when
 
 <h2>Free, no ads</h2>
 <p>ReDue is free with no ads and no limit on tasks. An optional one-time <strong>ReDue
-Pro</strong> purchase adds a home-screen widget, stats and charts, and more color themes
-and app icons. Sync across devices and shared household tasks are planned.</p>
+Pro</strong> purchase adds sync across your devices, a home-screen widget, stats and charts,
+and more color themes and app icons. Shared household tasks are planned.</p>
 
-<h2>Your data stays on your phone</h2>
-<p>There's no account to make. Your tasks live on your device; see the
+<h2>Your data, your choice</h2>
+<p>There's no account to make. Your tasks live on your device unless you turn on sync, which
+is optional and uses Google sign-in. You can
+<a href="delete-account.html">delete that account and its synced data</a> at any time. See the
 <a href="privacy.html">privacy policy</a>.</p>
 
 <h2>Support</h2>
