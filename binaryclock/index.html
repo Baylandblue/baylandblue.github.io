@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Binary Clock</title>
+<meta name="description" content="Binary Clock: a binary clock widget for your Android home screen that ticks live, every second. Circuit board LEDs, five styles, ten colors. No ads, nothing collected.">
+<link rel="icon" href="images/app_icon.png">
+<link rel="stylesheet" href="../style.css">
+<style>
+  /* Binary Clock's own palette: the icon's navy and the circuit board's LED green. */
+  :root {
+    --bg: #f6f8fc;
+    --text: #1f2a3b;
+    --muted: #5d6b7c;
+    --accent: #2b3d5c;
+    --green: #0f8a4f;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #141b26;
+      --text: #ecf0f5;
+      --muted: #a3b0c0;
+      --accent: #9fb8d8;
+      --green: #00e676;
+    }
+  }
+  /* The screenshots are nearly the page's color in dark mode, so they need an edge. */
+  .shots img { box-sizing: border-box; border: 1px solid color-mix(in srgb, var(--muted) 35%, transparent); }
+</style>
+</head>
+<body>
+<main>
+<p class="crumb"><a href="../"><img src="../images/bayland_blue_icon_48.png" alt="" width="24" height="24">Bayland Blue LLC</a></p>
+
+<div class="hero">
+  <img src="images/app_icon.png" alt="Binary Clock app icon" width="112" height="112">
+  <div>
+    <h1>Binary Clock</h1>
+    <p class="meta">The time in binary, on your home screen. For Android, coming soon to Google Play.</p>
+  </div>
+</div>
+
+<img class="banner" src="images/feature_graphic.png" alt="Binary Clock: binary time on your home screen. A green circuit board with lit LEDs shows the time." width="1024" height="500">
+
+<p>Binary Clock is a home-screen widget. Rows of lights spell out the hours, minutes and seconds,
+and it ticks live, every second, without opening the app.</p>
+
+<div class="shots">
+  <img src="images/screenshot_1.png" alt="Three clock widgets on a home screen: a circuit board, an LED matrix and a chrome retro style" width="1080" height="1920" loading="lazy">
+  <img src="images/screenshot_2.png" alt="How to read it: each column is a digit, and the lit lights add up to 10:42:37" width="1080" height="1920" loading="lazy">
+  <img src="images/screenshot_3.png" alt="The circuit board style with green, red, amber and blue LEDs" width="1080" height="1920" loading="lazy">
+  <img src="images/screenshot_4.png" alt="The five styles: Classic, LED Matrix, Chrome Retro, Minimal and Circuit Board" width="1080" height="1920" loading="lazy">
+  <img src="images/screenshot_5.png" alt="The same time in binary-coded decimal and in true binary" width="1080" height="1920" loading="lazy">
+  <img src="images/screenshot_6.png" alt="The setup screen: a live preview, then a choice of style and color" width="1080" height="1920" loading="lazy">
+</div>
+
+<h2>How to read it</h2>
+<p>Each column is one digit of the time. From the bottom, the lights count 1, 2, 4 and 8: add up
+the lit ones to get the digit. Captions under the columns mark the hours, minutes and seconds.
+Prefer the purist's way? Switch to true binary, with one column each for the hour, the minutes
+and the seconds.</p>
+
+<h2>What it does</h2>
+<ul>
+  <li><strong>Live seconds:</strong> the widget ticks every second on its own, and keeps going
+      after a restart</li>
+  <li><strong>Circuit Board:</strong> a green board with gold traces and round through-hole LEDs
+      in green, red, amber or blue</li>
+  <li><strong>Five styles and ten colors:</strong> LED Matrix, Chrome Retro, Minimal, Classic and
+      Circuit Board, and any color works with any style</li>
+  <li><strong>Your way:</strong> hours, minutes and seconds, or fewer; 12 or 24 hours; captions on
+      or off. Pick it all with a live preview when you add the widget</li>
+  <li><strong>As many clocks as you like,</strong> each with its own style</li>
+  <li><strong>Battery saver:</strong> update once a minute instead of every second</li>
+  <li><strong>11 languages:</strong> English, Spanish, Portuguese, French, German, Italian,
+      Russian, Japanese, Korean, Chinese and Turkish</li>
+</ul>
+
+<h2>One price, nothing else</h2>
+<p>Binary Clock is a one-time $0.99 download: no ads, no in-app purchases, no subscription and
+no account. The app has no internet access and collects nothing. See the
+<a href="privacy.html">privacy policy</a>.</p>
+
+<h2>Good to know</h2>
+<p>On Android 11 and older, the seconds step every few seconds instead of every second.</p>
+
+<h2>Support</h2>
+<p>Questions, feedback or bug reports:
+<a href="mailto:support@baylandblue.com?subject=Binary%20Clock">support@baylandblue.com</a></p>
+<p><a href="privacy.html">Privacy policy</a></p>
+</main>
+</body>
+</html>
