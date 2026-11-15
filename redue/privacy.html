@@ -11,7 +11,7 @@
 <main>
 <p class="crumb"><a href="./"><img src="images/app_icon.png" alt="" width="24" height="24">ReDue</a></p>
 <h1>ReDue – Privacy Policy</h1>
-<p class="meta">Effective November 8, 2026 · Bayland Blue LLC</p>
+<p class="meta">Effective November 15, 2026 · Bayland Blue LLC</p>
 
 <p>ReDue ("the app") is made by Bayland Blue LLC. This policy explains what information the
 app uses, where it goes, and the choices you have.</p>
@@ -25,9 +25,11 @@ app uses, where it goes, and the choices you have.</p>
       lists and history (with notes, numbers and photos) are also stored in the cloud, under
       your account, so your devices can share them. You can delete that account and data at any
       time.</li>
+  <li>Sharing is optional too. If you share a task or list with your household, or join one,
+      the people in it see its tasks and history, your name, and what you finish there.</li>
   <li>The app has no ads and no analytics or tracking.</li>
   <li>Bayland Blue LLC does not sell your data or use it for advertising. We receive data only
-      if you turn on sync, or email us a bug report yourself.</li>
+      if you turn on sync or sharing, or email us a bug report yourself.</li>
   <li>An optional one-time ReDue Pro purchase is handled entirely by Google Play.</li>
 </ul>
 
@@ -51,8 +53,8 @@ on your device, or an app you share them with, such as Google Drive or email. Wh
 them there is up to you and that service.</p>
 
 <h2>Reminders and the home-screen widget</h2>
-<p>Reminders are scheduled on your device by Android's notification system; nothing is sent
-to a server. Notifications and the optional home-screen widget show task names on your screen,
+<p>Reminders are scheduled on your device by Android's notification system; nothing about
+them is sent to a server. (For shared lists, see "Push messages" below.) Notifications and the optional home-screen widget show task names on your screen,
 including the lock screen if your device's settings allow it.</p>
 
 <h2>Bug reports</h2>
@@ -81,11 +83,13 @@ do:</p>
       <a href="https://firebase.google.com/support/privacy">Firebase privacy terms</a>. To run
       the service, Google also processes technical details such as your IP address.</li>
   <li><strong>Protection.</strong> Data is encrypted on its way to and from the cloud and while
-      stored there, and the app can reach only the signed-in user's own data. Bayland Blue LLC
+      stored there, and the app can reach only the signed-in user's own data and the shared lists
+      they belong to. Bayland Blue LLC
       runs this service, so it is technically able to reach the data. We look at it only if you
       ask for help, or if the law requires it.</li>
   <li><strong>Not shared.</strong> We do not sell this data, use it for advertising, or share it
-      with anyone apart from the service providers named above.</li>
+      with anyone apart from the service providers named above, and, for a shared list, the
+      people you share it with.</li>
   <li><strong>How long it is kept.</strong> Until you delete it. Removing a photo from a
       completion also removes it from the cloud. Signing out, uninstalling the app or no longer
       having ReDue Pro stops syncing but does not delete what is in the cloud.</li>
@@ -103,17 +107,50 @@ purchase is covered by the <a href="https://policies.google.com/privacy">Google 
 Policy</a> and the <a href="https://play.google.com/about/play-terms/">Google Play Terms of
 Service</a>. Refunds are handled by Google Play.</p>
 
-<h2>Future features</h2>
-<p>Sharing tasks with your household is planned for a later version. It will be optional, and
-this policy will be updated to describe it before it is released.</p>
+<h2>Sharing with your household (optional)</h2>
+<p>In versions of the app that include it, you can share a single task or a whole list with
+other people, such as your household, and take turns. Sharing needs ReDue Pro; joining someone
+else's list is free. Both need a Google sign-in, which works as described under "Sync" above
+(your email address, name, profile picture and a user ID). Nothing is shared unless you share
+something or accept an invite.</p>
+<ul>
+  <li><strong>What the other people in a shared list see.</strong> Its tasks and lists, their
+      complete history including notes, numbers, costs and photos, whose turn it is, a tally of
+      who finished how many, and the name from your Google account next to the things you
+      finish. They do not see your email address or anything outside the shared list.</li>
+  <li><strong>Where it is kept.</strong> A shared list and everything in it is stored in the
+      cloud the same way as synced data (Google Firebase, United States), and only its members
+      can reach it. Your own tasks stay private unless you move them into a shared list.</li>
+  <li><strong>Invites.</strong> An invite is a link with a code that anyone holding it can use
+      to join, so send it only to people you mean to invite. It stops working after 7 days.
+      Opening the link in a browser shows a page on baylandblue.com; the code is in the part of
+      the link that browsers do not send to the website.</li>
+  <li><strong>Leaving.</strong> Anyone can leave a shared list at any time, and its tasks then
+      leave their device. Things they finished while in it stay in the list's history, with
+      their name, for the people still in it. When the last person leaves, the list and its
+      photos are deleted from the cloud, and that person keeps its tasks as their own.</li>
+  <li><strong>Deleting your account.</strong> Deleting your account (see "Sync") also takes you
+      out of every shared list. The history you added to lists other people are still in stays
+      there, as above, so it stays complete for them.</li>
+</ul>
+
+<h2>Push messages for shared lists</h2>
+<p>So your phone hears about a change in a shared list (for example, that it's now your turn)
+even while the app is closed, the app uses Firebase Cloud Messaging, a Google service. While you
+are signed in, the app stores a push token for your device (an identifier Google issues for the
+app on that device) under your account. When a task in a shared list changes, a function run by
+Bayland Blue LLC on Google Cloud sends a message to the devices of the list's members. The
+message contains only an identifier for the list, never task names or personal details; your
+device then fetches the change itself and sets its own reminders. Your token is removed when you
+sign out or delete your account, and tokens that stop working are deleted automatically.</p>
 
 <h2>Children</h2>
 <p>The app is a general-audience productivity app and is not directed to children under 13.
 Bayland Blue LLC does not knowingly collect personal information from children.</p>
 
 <h2>Your rights</h2>
-<p>Bayland Blue LLC holds personal data about you only if you turn on sync, or email us a bug
-report, which we delete on request. Your data in the app is under your control: you can edit or
+<p>Bayland Blue LLC holds personal data about you only if you turn on sync or sharing, or email
+us a bug report, which we delete on request. Your data in the app is under your control: you can edit or
 delete any of it in the app, or remove what is on your device by uninstalling. If you use sync,
 you can delete your account and synced data in the app or by
 <a href="delete-account.html">asking us</a>. You can also ask us for a copy of what we hold about
