@@ -1,0 +1,13 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.baylandblue.redue",
+      "sha256_cert_fingerprints": [
+        "24:BF:D9:F6:93:E2:11:FE:86:DC:87:31:1E:9E:00:37:3E:0C:0C:27:6B:49:A8:B4:48:48:35:D8:B1:76:A6:F8",
+        "84:AD:30:AE:A3:B8:F1:5F:97:9C:98:74:4B:21:D7:2F:42:25:C7:04:F5:16:48:35:48:3C:27:66:29:F7:9C:2A"
+      ]
+    }
+  }
+]

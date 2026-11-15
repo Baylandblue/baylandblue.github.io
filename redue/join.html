@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>ReDue – You're Invited</title>
+<link rel="icon" href="../images/bayland_blue_icon_48.png">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<main>
+<p class="crumb"><a href="./"><img src="images/app_icon.png" alt="" width="24" height="24">ReDue</a></p>
+<h1>You're invited to share tasks on ReDue</h1>
+
+<p>Someone wants to share tasks with you. ReDue is free to join with, and you only need a
+Google account.</p>
+
+<h2>1. Get the app</h2>
+<p class="actions"><a class="button" href="https://play.google.com/store/apps/details?id=com.baylandblue.redue">Get it on Google Play</a></p>
+
+<h2>2. Enter your code</h2>
+<p id="code-line" hidden>Your code: <strong id="code"></strong></p>
+<p id="no-code">Your code is in the link you were sent.</p>
+<p>In ReDue, go to <strong>Settings → Sharing → Join with a code</strong> and enter it. Invites
+last 7 days, so if yours has run out, ask for a new one.</p>
+
+<p>See the <a href="privacy.html">privacy policy</a> for what's shared.</p>
+</main>
+<script>
+  // The code stays in the part of the link browsers don't send to the server.
+  var code = location.hash.slice(1).toUpperCase();
+  if (/^[A-HJKMNP-Z2-9]{10}$/.test(code)) {
+    document.getElementById('code').textContent = code;
+    document.getElementById('code-line').hidden = false;
+    document.getElementById('no-code').hidden = true;
+  }
+</script>
+</body>
+</html>
